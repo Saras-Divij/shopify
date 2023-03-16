@@ -2,7 +2,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'shopify'
-version: '1.0.0'
+version: '1.2'
 config-version: 2
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
@@ -49,6 +49,18 @@ vars:
   ShopifyProduct: True
   ShopifyOrdersRefundsTransactions: True
   ShopifyTransactions: True
+  ShopifyCheckouts: True
+  ShopifyCollects: True
+  ShopifyCarrierServices: True
+  ShopifyCountries: True
+  ShopifyEvents: False
+  ShopifyLocations: True
+  ShopifyPayouts: True
+  ShopifyPolicies: True
+  ShopifyPriceRules: False
+  ShopifyShop: True
+  ShopifySmartCollections: True
+  ShopifyTenderTransactions: True
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
