@@ -53,7 +53,7 @@ vars:
   ShopifyCollects: True
   ShopifyCarrierServices: True
   ShopifyCountries: True
-  ShopifyEvents: False
+  ShopifyEvents: True
   ShopifyLocations: True
   ShopifyPayouts: True
   ShopifyPolicies: True

@@ -178,7 +178,7 @@ models:
       materialized: incremental
       incremental_strategy: merge
       unique_key: ['id']
-      partition_by: { 'field': '_last_updated', 'data_type': 'timestamp', 'granularity': 'day' }
+      partition_by: { 'field': 'created_at', 'data_type': 'timestamp', 'granularity': 'day' }
       cluster_by: ['id']
 
   - name: ShopifyShop
@@ -250,7 +250,7 @@ models:
       materialized: incremental
       incremental_strategy: merge
       unique_key: ['id']
-      partition_by: { 'field': '_last_updated', 'data_type': 'timestamp', 'granularity': 'day' }
+      partition_by: { 'field': 'created_at', 'data_type': 'timestamp', 'granularity': 'day' }
       cluster_by: ['id']
 
   - name: ShopifyCarrierServices
